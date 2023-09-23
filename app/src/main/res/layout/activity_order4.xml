@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jj"
+    tools:context=".orderActivity4">
+
+    <ImageView
+        android:id="@+id/imgipad"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ipad11pro" />
+
+    <TextView
+        android:id="@+id/txtx"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgipad"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtx"
+        app:layout_constraintVertical_bias="0.5">
+
+        <RadioButton
+            android:id="@+id/rbtnwhite2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black" />
+
+        <RadioButton
+            android:id="@+id/rbtnblack2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gold" />
+
+        <RadioButton
+            android:id="@+id/rbtngold2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="White" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
+        app:layout_constraintVertical_bias="0.5">
+
+        <RadioButton
+            android:id="@+id/rbtn128gb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="128 GB" />
+
+        <RadioButton
+            android:id="@+id/rbtn256gb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="256 GB" />
+
+        <RadioButton
+            android:id="@+id/rbtn512gb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="512 GB" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnbtn"
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/white"
+        android:text="Add to cart"
+        android:textColor="@color/black"
+        android:onClick="btnbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup6"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
